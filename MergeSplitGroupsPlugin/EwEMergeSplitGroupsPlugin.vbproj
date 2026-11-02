@@ -64,16 +64,16 @@
   <ItemGroup>
     <Reference Include="SourceGrid2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=ad929b4064585aea, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Includes\SourceGrid2.dll</HintPath>
+      <HintPath>..\Includes\SourceGrid2.dll</HintPath>
     </Reference>
     <Reference Include="SourceLibrary, Version=1.2.0.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Includes\SourceLibrary.dll</HintPath>
+      <HintPath>..\Includes\SourceLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.5072.22113, Culture=neutral, PublicKeyToken=dd4210ebb9723de9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Includes\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <HintPath>..\Includes\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -145,8 +145,8 @@
     <PackageIcon>EII_plain_128x128.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
-    <None Include="..\..\EII_plain_128x128.png" Pack="True" PackagePath="\" />
+    <None Include="..\README.md" Pack="True" PackagePath="\" />
+    <None Include="..\EII_plain_128x128.png" Pack="True" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Eii.Ecopath.ScientificInterfaceShared" Version="6.7.*" />
