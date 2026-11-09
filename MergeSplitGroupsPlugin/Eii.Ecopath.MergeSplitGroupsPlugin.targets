@@ -1,0 +1,20 @@
+<Project>
+  <Target Name="SetMergeSplitGroupsPluginBuildDestination"
+          AfterTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Update="@(ReferenceCopyLocalPaths)"
+                               Condition="'%(ReferenceCopyLocalPaths.Filename)' == 'EwEMergeSplitGroupsPlugin'">
+        <DestinationSubDirectory>Plugins\MergeSplitGroupsPlugin\</DestinationSubDirectory>
+      </ReferenceCopyLocalPaths>
+    </ItemGroup>
+  </Target>
+  <Target Name="SetMergeSplitGroupsPluginPublishDestination"
+          AfterTargets="ComputeResolvedFilesToPublishList">
+    <ItemGroup>
+      <ResolvedFileToPublish Update="@(ResolvedFileToPublish)"
+                             Condition="'%(ResolvedFileToPublish.Filename)' == 'EwEMergeSplitGroupsPlugin'">
+        <RelativePath>Plugins\MergeSplitGroupsPlugin\%(ResolvedFileToPublish.Filename)%(ResolvedFileToPublish.Extension)</RelativePath>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+</Project>
